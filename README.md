@@ -13,3 +13,8 @@
 1. 构建：`docker build -t excel-splitter .`
 2. 运行：`docker run -d -p 5000:5000 excel-splitter`
 3. 访问：`http://localhost:5000`
+
+docker run -d -p 5000:5000 \
+  -e APP_USER=myuser \
+  -e APP_PASSWORD=mypassword \
+  --name excel-app your-image-name
